@@ -489,6 +489,19 @@ Configuration for ESP32S3_EYE on `Freenove ESP32-S3-DevKitC-1 <https://github.co
       name: My Camera
       # ...
 
+Configuration for `Feed-xiao-esp32s3-sense-board>`_
+---------------------------------------------------------------------------------------------------------------------------
+.. code-block:: yaml
+
+esp32:
+  board: seeed_xiao_esp32s3
+  variant: esp32s3
+  framework:
+    type: arduino
+    version: latest
+    platform_version: 6.4.0
+
+
 See Also
 --------
 
