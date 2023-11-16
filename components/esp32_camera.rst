@@ -488,6 +488,42 @@ Configuration for ESP32S3_EYE on `Freenove ESP32-S3-DevKitC-1 <https://github.co
       # Image settings
       name: My Camera
       # ...
+Configuration for seed-xiao-esp32s3-sense-board>`_
+---------------------------------------------------------------------------------------------------------------------------
+--code-block: yaml
+ esp32:
+  board: seeed_xiao_esp32s3
+  variant: esp32s3
+  framework:
+    type: arduino
+    version: latest
+    platform_version: 6.4.0
+esp32_camera:
+  external_clock:
+    pin: GPIO10
+    frequency: 20MHz
+  i2c_pins:
+    sda: GPIO40
+    scl: GPIO39
+  data_pins: [GPIO15, GPIO17, GPIO18, GPIO16, GPIO14, GPIO12, GPIO11, GPIO48]
+  vsync_pin: GPIO38
+  href_pin: GPIO47
+  pixel_clock_pin: GPIO13
+
+  # Image settings
+  name: My XIAO-Camera
+  # Config cam
+  aec2: True
+  aec_mode: auto
+  resolution: 640x480 
+  max_framerate: 10 fps
+  idle_framerate: 0.1 fps
+  special_effect: none
+  jpeg_quality: 10
+  wb_mode: auto
+  agc_gain_ceiling: 2x
+  vertical_flip: False
+  horizontal_mirror: False
 
 See Also
 --------
